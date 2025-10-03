@@ -1,0 +1,14 @@
+{
+  "name": "solana-landing",
+  "version": "1.0.0",
+  "description": "One-screen landing with animated logo intro and roadmap",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

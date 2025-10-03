@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+  />
+  <title>Landing</title>
+
+  <!-- Local fonts preload -->
+  <link rel="preload" href="/assets/fonts/MyFont/MyFont-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/MyFont/MyFont-Bold.woff2"    as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/MyHead/MyHead-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/MyHead/MyHead-Bold.woff2"    as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<!-- Background image -->
+<div class="bg" aria-hidden="true"></div>
+
+<!-- Floating capsules (under content, above background) -->
+<div class="floaters" aria-hidden="true"></div>
+
+<!-- Intro overlay (logo injected by JS) -->
+<div id="intro" aria-hidden="true"></div>
+
+<!-- Page -->
+<div id="page">
+  <header class="appbar">
+    <img id="headerLogo" src="/assets/logo.png" alt="Logo" />
+
+    <!-- Mobile-only note -->
+    <p class="mobile-note">Switch to desktop for full PUMPGUY experience.</p>
+  </header>
+
+  <main class="layout">
+    <section class="side-stack left">
+      <!-- FARMERS -->
+      <div class="char">
+        <div class="char-box">
+          <img src="/assets/farmer.png" alt="Farmer">
+        </div>
+        <div class="side-text">
+          <img class="label-img" src="/assets/label-farmer.png" alt="Farmers">
+          <p>Industrial “farmers” mass-produce tokens on Pump.fun. They recycle the same meme kits, template contracts, and botted hype to mint dozens of tickers a day, flooding feeds and confusing new buyers. FIGHT THEM WITH PUMPGUY!</p>
+        </div>
+      </div>
+
+      <!-- RUGPULLERS -->
+      <div class="char">
+        <div class="char-box">
+          <img src="/assets/rugpuller.png" alt="Rugpuller">
+        </div>
+        <div class="side-text">
+          <img class="label-img" src="/assets/label-rug.png" alt="Rugpullers">
+          <p>Rugpullers yank liquidity or dump unlocked supply, leaving holders with nothing. It thrives when people skip reading the basics and chase only green candles. FIGHT THEM WITH PUMPGUY!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="side-stack right"></section>
+  </main>
+
+  <!-- Vertical roadmap with a single centered milestone -->
+  <section class="v-roadmap" aria-label="Roadmap">
+    <div class="v-rail">
+      <img src="/assets/road-rail.png" alt="Vertical roadmap placeholder">
+    </div>
+
+    <div class="milestones">
+      <article class="ms ms--solo">
+        <img class="ms-img" src="/assets/rm1.png" alt="Milestone">
+        <div class="ms-text">
+          <h3>5 MILLION MARKET CAP</h3>
+          <p>When the token breaks a $5M market cap, Pumpguy will host a live-streamed trip to India: to defeat all paperhands</p>
+          <p>Probably nothing.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- Left: contract -->
+      <div class="footer-left">
+        <div class="contract">
+          <span class="label">Contract</span>
+          <code id="contractAddress">So11111111111111111111111111111111111111112</code>
+        </div>
+      </div>
+
+      <!-- Center: socials -->
+      <div class="footer-center">
+        <nav class="socials" aria-label="Links">
+          <a class="social" href="https://pump.fun/" target="_blank" rel="noopener">
+            <img src="/assets/icon-pumpfun.png" alt="Pump.fun">
+          </a>
+          <a class="social" href="https://t.me/" target="_blank" rel="noopener">
+            <img src="/assets/icon-telegram.png" alt="Telegram">
+          </a>
+          <a class="social" href="https://twitter.com/" target="_blank" rel="noopener">
+            <img src="/assets/icon-twitter.png" alt="Twitter">
+          </a>
+        </nav>
+      </div>
+
+      <!-- Right spacer -->
+      <div class="footer-right" aria-hidden="true"></div>
+    </div>
+  </footer>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
