@@ -229,24 +229,54 @@ body{
     #headerLogo{ width:min(70vw, 420px); }
     .mobile-note{ display:block; }
 
-    .footer{ padding: 18px var(--pad) 22px; }
-    .footer-inner{
-        grid-template-columns: 1fr;
-        grid-auto-rows: min-content;
-        row-gap: 12px;
-    }
-    .footer-left{ justify-self:center; }
-    .footer-center{ justify-self:center; }
-    .footer-right{ display:none; }
-
-    .contract{
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
+    .footer {
+        padding: 18px var(--pad) 22px;
         text-align: center;
     }
-    .contract .label{ font-size:13px; }
-    .contract code{ font-size:15px; line-height:1.2; }
 
-    .social img{ width:32px; height:32px; }
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    /* Contract block */
+    .contract {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        text-align: center;
+    }
+
+    .contract .label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .contract code {
+        font-size: 14px;
+        white-space: nowrap;     /* адрес всегда в одну строку */
+        overflow-x: auto;        /* появится горизонтальная прокрутка, если не влазит */
+        display: block;
+        max-width: 100%;
+    }
+
+    /* Centered socials */
+    .footer-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .social img {
+        width: 34px;
+        height: 34px;
+    }
 }
